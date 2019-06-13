@@ -4,8 +4,8 @@
   "description": "This is server side application for Smart Online Restaurant Booking System",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint ./ *.js"
+    "lint": "./node_modules/.bin/eslint ./ *.js",
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
   },
   "pre-commit": [
     "lint"
-  ]
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
 }
