@@ -4,7 +4,8 @@
   "description": "This is server side application for Smart Online Restaurant Booking System",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint ./ *.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,14 @@
   },
   "homepage": "https://github.com/smart-online-restro-booking-system/restro-booking-server#readme",
   "dependencies": {
+    "eslint": "^5.16.0",
     "express": "^4.17.1",
     "log4js": "^4.3.1",
     "nconf": "^0.10.0",
-    "underscore": "^1.9.1"
-  }
+    "underscore": "^1.9.1",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }

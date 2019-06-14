@@ -1,0 +1,166 @@
+{
+    "env": {
+      "mocha": true,
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-bitwise": 0,
+      "curly": [
+        2,
+        "all"
+      ],
+      "eqeqeq": 2,
+      "guard-for-in": 2,
+      "no-extend-native": 2,
+      "wrap-iife": 2,
+      "indent": [
+        2,
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "no-use-before-define": [
+        2,
+        {
+          "functions": false
+        }
+      ],
+      "complexity": [
+        2,
+        34
+      ],
+      "max-depth": [
+        2,
+        8
+      ],
+      "max-len": 0,
+      "max-params": [
+        2,
+        16
+      ],
+      "max-statements": [
+        2,
+        100
+      ],
+      "new-cap": 0,
+      "no-caller": 2,
+      "no-sequences": 0,
+      "no-empty": [
+        2,
+        {
+          "allowEmptyCatch": true
+        }
+      ],
+      "no-irregular-whitespace": 2,
+      "no-new": 2,
+      "no-plusplus": 0,
+      "no-extra-parens": 2,
+      "strict": 0,
+      "no-undef": 2,
+      "no-unused-vars": 0,
+      "semi": 2,
+      "no-extra-semi": 2,
+      "no-cond-assign": 0,
+      "no-debugger": 0,
+      "no-eq-null": 0,
+      "no-eval": 0,
+      "no-unused-expressions": 0,
+      "block-scoped-var": 0,
+      "no-iterator": 0,
+      "linebreak-style": 2,
+      "comma-style": [
+        2,
+        "last"
+      ],
+      "no-loop-func": 0,
+      "no-multi-str": 2,
+      "valid-typeof": 0,
+      "require-yield": 0,
+      "no-proto": 0,
+      "no-script-url": 0,
+      "no-shadow": 2,
+      "dot-notation": 2,
+      "no-new-func": 0,
+      "no-new-wrappers": 0,
+      "no-invalid-this": 0,
+      "no-with": 2,
+      "keyword-spacing": [
+        2,
+        {}
+      ],
+      "space-before-blocks": [
+        2,
+        "always"
+      ],
+      "space-before-function-paren": [
+        2,
+        {
+          "anonymous": "ignore",
+          "named": "never"
+        }
+      ],
+      "array-bracket-spacing": [
+        2,
+        "never",
+        {}
+      ],
+      "space-in-parens": [
+        2,
+        "never"
+      ],
+      "space-unary-ops": [
+        2,
+        {
+          "words": false,
+          "nonwords": false
+        }
+      ],
+      "space-infix-ops": 2,
+      "no-mixed-spaces-and-tabs": 2,
+      "no-trailing-spaces": 2,
+      "comma-dangle": [
+        2,
+        "never"
+      ],
+      "brace-style": [
+        2,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "eol-last": 2,
+      "key-spacing": [
+        2,
+        {
+          "afterColon": true
+        }
+      ],
+      "no-multiple-empty-lines": [
+        2,
+        {
+          "max": 1
+        }
+      ],
+  
+      //List of Rules we wish to follow someday. They will only warn developers
+      //for now, and will not cause the linter to exit with an error code.
+      "no-underscore-dangle": 1,
+      "camelcase": [
+        1,
+        {
+          "properties": "never"
+        }
+      ],
+      "quotes": [
+        1,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ]
+    }
+  }
+  
