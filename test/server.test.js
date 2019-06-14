@@ -1,7 +1,8 @@
 const assert = require('chai').assert;
 const index = require('../server');
 
-//Testing build configuration
+//Sample test case to verify testing environment working
+//Todo: Replace sample test case with actual test case scenarios
 describe('test', () => {
     it('Should return string', () => {
         let result = 'ci with travis'
