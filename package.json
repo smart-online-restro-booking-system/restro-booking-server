@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "./node_modules/.bin/eslint ./ *.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,10 @@
     "express": "^4.17.1",
     "log4js": "^4.3.1",
     "nconf": "^0.10.0",
-    "underscore": "^1.9.1"
-  }
+    "underscore": "^1.9.1",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
