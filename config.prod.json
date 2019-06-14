@@ -1,0 +1,39 @@
+{
+  "server": {
+    "port": 5000
+  },
+  "logging": {
+    "appenders": {
+      "audit": {
+        "type": "file",
+        "filename": "audit.log",
+        "maxLogSize": 2000000
+      },
+      "application": {
+        "type": "file",
+        "filename": "application.log",
+        "maxLogSize": 2000000
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "application"
+        ],
+        "level": "warn"
+      },
+      "application": {
+        "appenders": [
+          "application"
+        ],
+        "level": "warn"
+      },
+      "audit": {
+        "appenders": [
+          "audit"
+        ],
+        "level": "trace"
+      }
+    }
+  }
+}

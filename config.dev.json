@@ -1,0 +1,32 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "logging": {
+    "appenders": {
+      "default": {
+        "type": "console"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "default"
+        ],
+        "level": "debug"
+      },
+      "application": {
+        "appenders": [
+          "default"
+        ],
+        "level": "debug"
+      },
+      "audit": {
+        "appenders": [
+          "default"
+        ],
+        "level": "trace"
+      }
+    }
+  }
+}
