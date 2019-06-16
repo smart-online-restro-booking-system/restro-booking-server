@@ -6,12 +6,10 @@ const logger = require('./logger').getLogger('application');
 const app = express();
 const port = nconf.get('server:port');
 
-
 function start() {
-
-    app.get('/', (req, res) => {
-        res.send(200, { status: 'ok' });
-    });
+   
+    //Routes
+    app.use(require('./routes'))
 
     app.listen(port, () => {
         logger.debug(`Listening on port: ${port}`);
