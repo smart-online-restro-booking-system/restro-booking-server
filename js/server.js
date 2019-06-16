@@ -5,13 +5,12 @@ const logger = require('./logger').getLogger('application');
 
 const app = express();
 const port = nconf.get('server:port');
-
+const route = require('./routes');
 
 function start() {
-
-    app.get('/', (req, res) => {
-        res.send(200, { status: 'ok' });
-    });
+   
+    //Routes
+    app.use(route)
 
     app.listen(port, () => {
         logger.debug(`Listening on port: ${port}`);
